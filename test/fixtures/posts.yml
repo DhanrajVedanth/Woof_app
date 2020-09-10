@@ -2,6 +2,8 @@
 
 one:
   post: First Post
+  user_id: 1
 
 two:
   post: Second Post
+  user_id: 2
