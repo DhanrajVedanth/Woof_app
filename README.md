@@ -34,6 +34,10 @@ Areas of focus:
 - Mobile App runs on Java [Andriod]
 ---
 
+## Current site
+
+<img src="woof_site.png" alt="Woof!" width="200" />
+
 Members: 
  - Vijay Anand
  - Ananya Nunna 
