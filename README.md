@@ -34,9 +34,9 @@ Areas of focus:
 - Mobile App runs on Java [Andriod]
 ---
 
-## Current site
+## Current working webapp
 
-<img src="woof_site.png"/>
+<img src="woof_site.png" width="600"/>
 
 Members: 
  - Vijay Anand
