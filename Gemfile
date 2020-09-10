@@ -37,6 +37,7 @@ gem 'bulma-rails', '~> 0.6.1'
 gem 'simple_form', '~> 3.5'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.3'
+gem 'travis'
 
 
 group :development, :test do
