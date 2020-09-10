@@ -1,6 +1,6 @@
 
 
-<img src="woof.png" alt="Woof!" width="300" />
+<img src="woof.png" alt="Woof!" width="200" />
 
 [![Build Status](https://travis-ci.org/DhanrajVedanth/Woof_app.svg?branch=master)](https://travis-ci.org/DhanrajVedanth/Woof_app)
 
