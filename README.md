@@ -2,6 +2,8 @@
 
 <img src="woof.png" alt="Woof!" width="300" />
 
+[![Build Status](https://travis-ci.org/DhanrajVedanth/Woof_app.svg?branch=master)](https://travis-ci.org/DhanrajVedanth/Woof_app)
+
 ## Who are we?
 - Woof is is an enterprise connectivity platform exclusive for NC State
 - One stop solution to tackle remote education, collaboration and socialising with fellow NC State students, Professors and Clubs! 
