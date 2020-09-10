@@ -36,7 +36,7 @@ Areas of focus:
 
 ## Current site
 
-<img src="woof_site.png" alt="Woof!" width="200" />
+<img src="woof_site.png"/>
 
 Members: 
  - Vijay Anand
