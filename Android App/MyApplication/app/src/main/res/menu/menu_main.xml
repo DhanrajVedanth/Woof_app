@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search_icon"
+            android:title="@android:string/search_go"
+            app:actionViewClass="android.widget.SearchView"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/notifications"
+            android:title="Notifications"
+            android:icon="@drawable/notification_icon"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/settings"
+            android:title="Settings"
+            app:showAsAction="collapseActionView|ifRoom"/>
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            app:showAsAction="collapseActionView|ifRoom"/>
+        <item
+            android:id="@+id/signout"
+            android:title="Sign Out"
+            app:showAsAction="collapseActionView|ifRoom"/>
+
+
+</menu>
