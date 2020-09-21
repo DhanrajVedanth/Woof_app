@@ -16,11 +16,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePhoto"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@color/colorAccent"
+        android:src="@drawable/loginpic3"
         android:scaleType="centerCrop"
         android:layout_marginTop="130dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,9 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/profilePhoto"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2">
+        app:layout_constraintBottom_toTopOf="@+id/profileLL1">
 
-        <TextView
+        <EditText
             android:id="@+id/profileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,16 +53,16 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
         
-        <TextView
+        <EditText
             android:id="@+id/bio"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:textSize="15dp"
-            android:text="Here is the bio. However long...................goes to the next linefasfhafasbfahfajhfajf"
+            android:maxLength="50"
+            android:text="Here is the bio"
             app:layout_constraintTop_toBottomOf="@+id/followButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
 
         <TextView
@@ -101,232 +101,95 @@
             app:layout_constraintTop_toBottomOf="@+id/bio" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintVertical_chainStyle="spread"
+    <LinearLayout
+        android:id="@+id/profileLL1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/layoutBio"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/relativeLayout2">
-
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/profileLL2"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/picture1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like1"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <ImageButton
-            android:id="@+id/like1"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture1" />
-
-        <ImageButton
-            android:id="@+id/save1"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture1"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/layoutBio"
-        app:layout_constraintLeft_toRightOf="@+id/relativeLayout1"
-        app:layout_constraintRight_toLeftOf="@id/relativeLayout3">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/loginpic1"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/picture2"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/loginpic1"
+            android:layout_weight="1"
+            android:scaleType="fitXY"/>
 
-        <ImageButton
-            android:id="@+id/like2"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture2" />
-
-        <ImageButton
-            android:id="@+id/save2"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintBottom_toTopOf="@+id/picture2"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/layoutBio"
-        app:layout_constraintLeft_toRightOf="@+id/relativeLayout2"
-        app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
             android:id="@+id/picture3"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like3"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <ImageButton
-            android:id="@+id/like3"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/picture3"/>
-
-        <ImageButton
-            android:id="@+id/save3"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintBottom_toTopOf="@id/picture3"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/loginpic1"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+    </LinearLayout>
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+
+
+
+    <LinearLayout
+        android:id="@+id/profileLL2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/profileLL1"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/relativeLayout5">
-
+        app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/picture4"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like4"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <ImageButton
-            android:id="@+id/like4"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture4" />
-
-        <ImageButton
-            android:id="@+id/save4"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture4"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-        app:layout_constraintLeft_toRightOf="@+id/relativeLayout4"
-        app:layout_constraintRight_toLeftOf="@id/relativeLayout6"
-        app:layout_constraintBottom_toBottomOf="parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/loginpic1"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/picture5"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like5"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <ImageButton
-            android:id="@+id/like5"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/picture5" />
-
-        <ImageButton
-            android:id="@+id/save5"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintBottom_toTopOf="@+id/picture5"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
-        app:layout_constraintLeft_toRightOf="@+id/relativeLayout5"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/loginpic1"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/picture6"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@color/colorPrimaryDark"
-            app:layout_constraintTop_toBottomOf="@+id/like6"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/loginpic1"
+            android:layout_weight="1"
+            android:scaleType="fitXY"/>
 
-        <ImageButton
-            android:id="@+id/like6"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/like_icon2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/picture6"/>
+    </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/save6"
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:src="@drawable/save_icon"
-            app:layout_constraintBottom_toTopOf="@id/picture6"
-            app:layout_constraintRight_toRightOf="parent"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
