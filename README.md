@@ -5,6 +5,7 @@
 <img src="woof.png" alt="Woof!" width="200" />
 
 [![Build Status](https://travis-ci.org/DhanrajVedanth/Woof_app.svg?branch=master)](https://travis-ci.org/DhanrajVedanth/Woof_app)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4041590.svg)](https://doi.org/10.5281/zenodo.4041590)
 
 ## Who are we?
 - Woof is is an enterprise connectivity platform exclusive for NC State
