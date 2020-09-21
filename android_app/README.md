@@ -38,11 +38,11 @@ Areas of focus:
 
 > Current working webapp
 
-<img src="app_SS1.jpeg" width="1000"/>
-<img src="app_SS2.jpeg" width="1000"/>
-<img src="app_SS3.jpeg" width="1000"/>
-<img src="app_SS4.jpeg" width="1000"/>
-<img src="app_SS5.jpeg" width="1000"/>
+<img src="app_SS1.jpeg" width="500"/>
+<img src="app_SS2.jpeg" width="500"/>
+<img src="app_SS3.jpeg" width="500"/>
+<img src="app_SS4.jpeg" width="500"/>
+<img src="app_SS5.jpeg" width="500"/>
 
 Members: 
  - Vijay Anand
