@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DhanrajVedanth/Woof_app.svg?branch=master)](https://travis-ci.org/DhanrajVedanth/Woof_app)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4041590.svg)](https://doi.org/10.5281/zenodo.4041590)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a7cbad29bf16194863e6/maintainability)](https://codeclimate.com/github/DhanrajVedanth/Woof_app/maintainability)
 
 
 [![Watch the video](https://github.com/DhanrajVedanth/Woof_app/blob/master/images/Woof_thumbnail.png)](https://youtu.be/sOLlhGcmIHo)
