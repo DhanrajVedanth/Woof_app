@@ -1,0 +1,801 @@
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.9ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.536787', '2020-09-10 21:49:54.536787');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.536787', '2020-09-10 21:49:54.536787');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.537855', '2020-09-10 21:49:54.537855');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.537855', '2020-09-10 21:49:54.537855')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.586159', '2020-09-10 21:49:54.586159');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.586159', '2020-09-10 21:49:54.586159');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.586213', '2020-09-10 21:49:54.586213');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.586213', '2020-09-10 21:49:54.586213')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.607545', '2020-09-10 21:49:54.607545');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.607545', '2020-09-10 21:49:54.607545');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.607611', '2020-09-10 21:49:54.607611');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.607611', '2020-09-10 21:49:54.607611')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.620758', '2020-09-10 21:49:54.620758');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.620758', '2020-09-10 21:49:54.620758');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.620817', '2020-09-10 21:49:54.620817');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.620817', '2020-09-10 21:49:54.620817')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.642475', '2020-09-10 21:49:54.642475');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.642475', '2020-09-10 21:49:54.642475');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.642544', '2020-09-10 21:49:54.642544');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.642544', '2020-09-10 21:49:54.642544')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.669485', '2020-09-10 21:49:54.669485');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.669485', '2020-09-10 21:49:54.669485');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.669564', '2020-09-10 21:49:54.669564');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.669564', '2020-09-10 21:49:54.669564')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:49:54.675608', '2020-09-10 21:49:54.675608');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:49:54.675608', '2020-09-10 21:49:54.675608');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:49:54.675662', '2020-09-10 21:49:54.675662');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:49:54.675662', '2020-09-10 21:49:54.675662')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.078820', '2020-09-10 21:50:43.078820');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.078820', '2020-09-10 21:50:43.078820');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.079902', '2020-09-10 21:50:43.079902');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.079902', '2020-09-10 21:50:43.079902')[0m
+  [1m[35m (2.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.119990', '2020-09-10 21:50:43.119990');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.119990', '2020-09-10 21:50:43.119990');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.120046', '2020-09-10 21:50:43.120046');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.120046', '2020-09-10 21:50:43.120046')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.134309', '2020-09-10 21:50:43.134309');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.134309', '2020-09-10 21:50:43.134309');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.134366', '2020-09-10 21:50:43.134366');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.134366', '2020-09-10 21:50:43.134366')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.142289', '2020-09-10 21:50:43.142289');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.142289', '2020-09-10 21:50:43.142289');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.142339', '2020-09-10 21:50:43.142339');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.142339', '2020-09-10 21:50:43.142339')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.161833', '2020-09-10 21:50:43.161833');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.161833', '2020-09-10 21:50:43.161833');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.161892', '2020-09-10 21:50:43.161892');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.161892', '2020-09-10 21:50:43.161892')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.166214', '2020-09-10 21:50:43.166214');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.166214', '2020-09-10 21:50:43.166214');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.166263', '2020-09-10 21:50:43.166263');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.166263', '2020-09-10 21:50:43.166263')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (980190962, 'First Post', '2020-09-10 21:50:43.196591', '2020-09-10 21:50:43.196591');
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at") VALUES (298486374, 'Second Post', '2020-09-10 21:50:43.196591', '2020-09-10 21:50:43.196591');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:50:43.196691', '2020-09-10 21:50:43.196691');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:50:43.196691', '2020-09-10 21:50:43.196691')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (23.4ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.704850', '2020-09-10 21:52:40.704850', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.704850', '2020-09-10 21:52:40.704850', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.706043', '2020-09-10 21:52:40.706043');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.706043', '2020-09-10 21:52:40.706043')[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.764236', '2020-09-10 21:52:40.764236', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.764236', '2020-09-10 21:52:40.764236', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.764296', '2020-09-10 21:52:40.764296');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.764296', '2020-09-10 21:52:40.764296')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.782145', '2020-09-10 21:52:40.782145', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.782145', '2020-09-10 21:52:40.782145', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.782227', '2020-09-10 21:52:40.782227');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.782227', '2020-09-10 21:52:40.782227')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.798660', '2020-09-10 21:52:40.798660', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.798660', '2020-09-10 21:52:40.798660', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.798713', '2020-09-10 21:52:40.798713');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.798713', '2020-09-10 21:52:40.798713')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.822936', '2020-09-10 21:52:40.822936', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.822936', '2020-09-10 21:52:40.822936', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.823105', '2020-09-10 21:52:40.823105');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.823105', '2020-09-10 21:52:40.823105')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.837115', '2020-09-10 21:52:40.837115', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.837115', '2020-09-10 21:52:40.837115', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.837174', '2020-09-10 21:52:40.837174');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.837174', '2020-09-10 21:52:40.837174')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:40.868192', '2020-09-10 21:52:40.868192', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:40.868192', '2020-09-10 21:52:40.868192', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:40.868272', '2020-09-10 21:52:40.868272');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:40.868272', '2020-09-10 21:52:40.868272')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.542712', '2020-09-10 21:52:51.542712', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.542712', '2020-09-10 21:52:51.542712', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.543741', '2020-09-10 21:52:51.543741');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.543741', '2020-09-10 21:52:51.543741')[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.577822', '2020-09-10 21:52:51.577822', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.577822', '2020-09-10 21:52:51.577822', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.577876', '2020-09-10 21:52:51.577876');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.577876', '2020-09-10 21:52:51.577876')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.598148', '2020-09-10 21:52:51.598148', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.598148', '2020-09-10 21:52:51.598148', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.598203', '2020-09-10 21:52:51.598203');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.598203', '2020-09-10 21:52:51.598203')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.614763', '2020-09-10 21:52:51.614763', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.614763', '2020-09-10 21:52:51.614763', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.614832', '2020-09-10 21:52:51.614832');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.614832', '2020-09-10 21:52:51.614832')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.631743', '2020-09-10 21:52:51.631743', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.631743', '2020-09-10 21:52:51.631743', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.631813', '2020-09-10 21:52:51.631813');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.631813', '2020-09-10 21:52:51.631813')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.635688', '2020-09-10 21:52:51.635688', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.635688', '2020-09-10 21:52:51.635688', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.635749', '2020-09-10 21:52:51.635749');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.635749', '2020-09-10 21:52:51.635749')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 21:52:51.639443', '2020-09-10 21:52:51.639443', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 21:52:51.639443', '2020-09-10 21:52:51.639443', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 21:52:51.639493', '2020-09-10 21:52:51.639493');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 21:52:51.639493', '2020-09-10 21:52:51.639493')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.9ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:13:05.313834', '2020-09-10 22:13:05.313834', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:13:05.313834', '2020-09-10 22:13:05.313834', 2);
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (980190962, '2020-09-10 22:13:05.315088', '2020-09-10 22:13:05.315088');
+INSERT INTO "users" ("id", "created_at", "updated_at") VALUES (298486374, '2020-09-10 22:13:05.315088', '2020-09-10 22:13:05.315088')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.2ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:22:46.514141', '2020-09-10 22:22:46.514141', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:22:46.514141', '2020-09-10 22:22:46.514141', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:22:46.515231', '2020-09-10 22:22:46.515231', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:22:46.515231', '2020-09-10 22:22:46.515231', 'Baishali', 'bmukher')[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PostsControllerTest: test_should_update_post
+--------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/posts/980190962" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"post"=>"First Post"}, "id"=>"980190962"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.1ms | Allocations: 1720)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PostsControllerTest: test_should_destroy_post
+---------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started DELETE "/posts/980190962" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms | Allocations: 273)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+PostsControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts/980190962/edit" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms | Allocations: 273)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PostsControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts/new" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PostsControllerTest: test_should_create_post
+--------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started POST "/posts" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"post"=>"First Post"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_show_post
+------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2020-09-10 18:22:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_trends.html.erb (Duration: 0.7ms | Allocations: 99)
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_feed.html.erb (Duration: 15.2ms | Allocations: 4642)
+  Rendered posts/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 5501)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms | Allocations: 7814)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:23:35.613793', '2020-09-10 22:23:35.613793', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:23:35.613793', '2020-09-10 22:23:35.613793', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:23:35.615027', '2020-09-10 22:23:35.615027', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:23:35.615027', '2020-09-10 22:23:35.615027', 'Baishali', 'bmukher')[0m
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+PostsControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts/980190962/edit" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.1ms | Allocations: 1715)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PostsControllerTest: test_should_destroy_post
+---------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started DELETE "/posts/980190962" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms | Allocations: 273)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_trends.html.erb (Duration: 0.2ms | Allocations: 99)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_feed.html.erb (Duration: 12.1ms | Allocations: 4642)
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5501)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms | Allocations: 7814)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PostsControllerTest: test_should_update_post
+--------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/posts/980190962" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"post"=>"First Post"}, "id"=>"980190962"}
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 278)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PostsControllerTest: test_should_create_post
+--------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started POST "/posts" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"post"=>"First Post"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_show_post
+------------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_feed.html.erb (Duration: 1.5ms | Allocations: 950)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1063)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1399)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PostsControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts/new" for 127.0.0.1 at 2020-09-10 18:23:35 -0400
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.0ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:24:23.917039', '2020-09-10 22:24:23.917039', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:24:23.917039', '2020-09-10 22:24:23.917039', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:24:23.918523', '2020-09-10 22:24:23.918523', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:24:23.918523', '2020-09-10 22:24:23.918523', 'Baishali', 'bmukher')[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2020-09-10 18:24:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_trends.html.erb (Duration: 0.6ms | Allocations: 99)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_feed.html.erb (Duration: 17.8ms | Allocations: 4675)
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 5534)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.2ms | Allocations: 7958)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.6ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:36:04.335328', '2020-09-10 22:36:04.335328', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:36:04.335328', '2020-09-10 22:36:04.335328', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:36:04.336298', '2020-09-10 22:36:04.336298', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:36:04.336298', '2020-09-10 22:36:04.336298', 'Baishali', 'bmukher')[0m
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+PostsControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2020-09-10 18:36:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_trends.html.erb (Duration: 0.7ms | Allocations: 99)
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_feed.html.erb (Duration: 17.8ms | Allocations: 4673)
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 5532)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms | Allocations: 7955)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.1ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:44:44.566136', '2020-09-10 22:44:44.566136', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:44:44.566136', '2020-09-10 22:44:44.566136', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:44:44.567340', '2020-09-10 22:44:44.567340', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:44:44.567340', '2020-09-10 22:44:44.567340', 'Baishali', 'bmukher')[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+UserTest: test_invalid_without_email
+------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------
+UserTest: test_valid_user
+-------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "draghun@ncsu.edu"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:45:19.989126', '2020-09-10 22:45:19.989126', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:45:19.989126', '2020-09-10 22:45:19.989126', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:45:19.990261', '2020-09-10 22:45:19.990261', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:45:19.990261', '2020-09-10 22:45:19.990261', 'Baishali', 'bmukher')[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------
+UserTest: test_valid_user
+-------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "draghun@ncsu.edu"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+UserTest: test_invalid_without_email
+------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (980190962, 'First Post', '2020-09-10 22:48:18.887304', '2020-09-10 22:48:18.887304', 1);
+INSERT INTO "posts" ("id", "post", "created_at", "updated_at", "user_id") VALUES (298486374, 'Second Post', '2020-09-10 22:48:18.887304', '2020-09-10 22:48:18.887304', 2);
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (980190962, 'draghun@ncsu.edu', '2020-09-10 22:48:18.888284', '2020-09-10 22:48:18.888284', 'Dhanraj Vedanth', 'draghun');
+INSERT INTO "users" ("id", "email", "created_at", "updated_at", "name", "username") VALUES (298486374, 'bmukher@ncsu.edu', '2020-09-10 22:48:18.888284', '2020-09-10 22:48:18.888284', 'Baishali', 'bmukher')[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------
+UserTest: test_valid_user
+-------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "draghun@ncsu.edu"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
