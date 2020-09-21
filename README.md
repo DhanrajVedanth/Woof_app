@@ -1,5 +1,3 @@
-# WOOF !
-
 [![Watch the video](https://github.com/DhanrajVedanth/Woof_app/blob/master/images/Woof_thumbnail.png)](https://youtu.be/sOLlhGcmIHo)
 
 <img src="woof.png" alt="Woof!" width="200" />
