@@ -40,16 +40,15 @@ public class Feed extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(),ChatActivity.class));
+                startActivity(new Intent(getApplicationContext(), ChatActivity.class));
             }
         });
 
 
-
         // specify an adapter (see also next example)
         ArrayList<Posts> posts = new ArrayList<Posts>();
-        for(int x=0; x<50; x++)
-            posts.add(new Posts("username_"+x, "this is the post text", "https://picsum.photos/600/300?random&"+x));
+        for (int x = 0; x < 50; x++)
+            posts.add(new Posts("username_" + x, "this is the post text", "https://picsum.photos/600/300?random&" + x));
 
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -89,7 +88,7 @@ public class Feed extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openProfile(View view){
-        startActivity(new Intent(this,Profile.class));
+    public void openProfile(View view) {
+        startActivity(new Intent(this, Profile.class));
     }
 }

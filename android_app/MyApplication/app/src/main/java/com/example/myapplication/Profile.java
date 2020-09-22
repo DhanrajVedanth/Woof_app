@@ -33,9 +33,9 @@ public class Profile extends AppCompatActivity {
         followButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(followButton.getText()=="Follow"){
-                followButton.setText("Following");}
-                else{
+                if (followButton.getText() == "Follow") {
+                    followButton.setText("Following");
+                } else {
                     followButton.setText("Follow");
                 }
             }

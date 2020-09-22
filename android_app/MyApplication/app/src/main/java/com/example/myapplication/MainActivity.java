@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        registerClick.setOnClickListener(new View.OnClickListener(){
+        registerClick.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent registrationScreen = new Intent(MainActivity.this, Register.class);
                 startActivity(registrationScreen);
             }

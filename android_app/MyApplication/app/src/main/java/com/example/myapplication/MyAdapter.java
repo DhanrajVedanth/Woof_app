@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,12 +18,13 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private ArrayList<Posts> posts;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         public View itemView;
         public TextView username;
         public TextView text;
         public ImageView photo;
-        public MyViewHolder(View v){
+
+        public MyViewHolder(View v) {
             super(v);
             itemView = v;
             username = itemView.findViewById(R.id.username);

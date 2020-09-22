@@ -9,13 +9,13 @@
 
     <LinearLayout
         android:id="@+id/loginLL1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/loginLL2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside"
         app:layout_constraintVertical_weight="1">
 
@@ -23,182 +23,182 @@
             android:id="@+id/loginPic1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic1"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic1" />
 
         <ImageView
             android:id="@+id/loginPic2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic2"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic2" />
 
         <ImageView
             android:id="@+id/loginPic3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic3"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic3" />
     </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/loginLL2"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/loginLL1"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/loginLL3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLL1"
         app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/loginPic4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic2"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic2" />
 
         <ImageView
             android:id="@+id/loginPic5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic3"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic3" />
 
         <ImageView
             android:id="@+id/loginPic6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic1"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic1" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/loginLL3"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/loginLL2"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/loginLL4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLL2"
         app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/loginPic7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic3"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic3" />
 
         <ImageView
             android:id="@+id/loginPic8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic1"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic1" />
 
         <ImageView
             android:id="@+id/loginPic9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic2"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic2" />
     </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/loginLL4"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/loginLL3"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/loginLL5"
+        app:layout_constraintTop_toBottomOf="@+id/loginLL3"
         app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/loginPic10"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic1"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic1" />
 
         <ImageView
             android:id="@+id/loginPic11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic2"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic2" />
 
         <ImageView
             android:id="@+id/loginPic12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic3"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic3" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/loginLL5"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/loginLL4"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLL4"
         app:layout_constraintVertical_weight="1">
 
         <ImageView
             android:id="@+id/loginPic13"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic2"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic2" />
 
         <ImageView
             android:id="@+id/loginPic14"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic3"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic3" />
 
         <ImageView
             android:id="@+id/loginPic15"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/loginpic1"
             android:layout_weight="1"
+            android:alpha="0.3"
             android:scaleType="fitXY"
-            android:alpha="0.3"/>
+            android:src="@drawable/loginpic1" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

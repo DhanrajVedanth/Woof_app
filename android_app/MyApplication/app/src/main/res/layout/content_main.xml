@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintTop_toBottomOf="@+id/toolbar"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
     <LinearLayout
         android:id="@+id/buttonsLinearLayout"
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        style="?android:attr/buttonBarStyle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintHorizontal_chainStyle="spread_inside">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <Button
 
@@ -50,8 +50,8 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/profile_icon"
-            android:text="Profile"
-            android:onClick="openProfile"/>
+            android:onClick="openProfile"
+            android:text="Profile" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -64,7 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonsLinearLayout"
         app:layout_constraintVertical_bias="0.0" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

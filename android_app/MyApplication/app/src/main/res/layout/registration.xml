@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,10 +21,10 @@
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/newUserFirstName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/newUserFirstName"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <EditText
@@ -34,14 +33,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="First Name"
+            android:inputType="textPersonName"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/newUserLastName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed"/>
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <EditText
             android:id="@+id/newUserLastName"
@@ -49,13 +48,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Last Name"
+            android:inputType="textPersonName"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            android:inputType="textPersonName"
-            app:layout_constraintTop_toBottomOf="@+id/newUserFirstName"
             app:layout_constraintBottom_toTopOf="@+id/newUserUserName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newUserFirstName" />
 
 
         <EditText
@@ -67,10 +66,10 @@
             android:inputType="textPersonName"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            app:layout_constraintTop_toBottomOf="@+id/newUserLastName"
             app:layout_constraintBottom_toTopOf="@+id/newUserPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newUserLastName" />
 
         <EditText
             android:id="@+id/newUserPassword"
@@ -81,10 +80,10 @@
             android:inputType="textPassword"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            app:layout_constraintTop_toBottomOf="@+id/newUserUserName"
             app:layout_constraintBottom_toTopOf="@+id/newUserEmail"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newUserUserName" />
 
         <EditText
             android:id="@+id/newUserEmail"
@@ -92,13 +91,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            android:inputType="textEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/newUserPassword"
+            app:layout_constraintBottom_toTopOf="@+id/newUserRegisterButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/newUserRegisterButton"/>
+            app:layout_constraintTop_toBottomOf="@+id/newUserPassword" />
 
         <Button
             android:id="@+id/newUserRegisterButton"
@@ -110,7 +109,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/newUserEmail"/>
+            app:layout_constraintTop_toBottomOf="@+id/newUserEmail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
