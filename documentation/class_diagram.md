@@ -1,1 +1,1 @@
-<img src="UML1.png" width=500/>
+<img src="UML1.png" width="950"/>
