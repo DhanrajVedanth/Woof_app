@@ -1,0 +1,75 @@
+EPIC #1:
+
+As a user
+I want to connect to other people
+so that I can meet new people and make new friends
+
+Story #1
+As a user
+I want to get recommendations based on my interest
+so that I can connect with like minded people
+
+Story #2: 
+As a user 
+I want to be able to search for user near my location
+so that I can connect with users in my vicinity
+
+Story #3:
+As a user
+I want to be able to search for specific people
+so that I can connect with people I’m already familiar with.
+
+Story #4: 
+As a user
+I want to share my stories
+so that I can share my experiences with my peers.
+
+Stroy #5:
+As a user
+I want to be able to see my friend’s stories
+so I can make fun of them.
+
+Story #6:
+As a user
+I want to be able to upload new media
+to share it with my friends.
+
+Story #7:
+As a user
+I want to chat with other users
+so that I can keep in touch with my friends and make new ones as well.
+
+
+
+
+EPIC #2:
+
+As a user
+I want to engage in activities
+so I can have the best college experience possible. 
+
+Story #1:
+As a user
+I want to be able to find the best kept secret in the campus
+
+Story #2:
+As a user
+I want to know about the events taking place on campus
+so I can participate in them.
+
+Story #3:
+As a user
+I want to be able to organize small events and invite my friends to the same
+so that we can have fun together as a group.
+
+
+
+
+EPIC #3:
+
+As an admin
+I want to create a secure application
+so that the users can have a safe, toxic free environment to meet new people and have a great online experience.
+
+
+ 
