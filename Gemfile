@@ -40,6 +40,7 @@ gem 'rails_admin', '~> 2.0', '>= 2.0.2'
 gem 'travis'
 gem 'simplecov', require: false, group: :test
 gem 'rails-erd', group: :development
+gem 'yard'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
