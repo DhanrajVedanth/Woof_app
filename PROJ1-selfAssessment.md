@@ -9,9 +9,9 @@
 || code conforms to some packaging standard|3
 || code has can be downloaded from some standard package manager|4
 | |workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)|4|
-|| Number of commits|4|
+|| Number of commits|2|
 || Number of commits: by different people|4|
-|| Issues reports: there are many|4|
+|| Issues reports: there are many|2|
 ||  issues are being  closed|4|
 || License: exists|4|
 || DOI badge: exists |4|
