@@ -42,7 +42,7 @@ Areas of focus:
 <img src="woof_site.png" width="1000"/>
 
 > After user signed in
-<img src="profile.png" width="1000"/>
+<img src="profile.JPG" width="1000"/>
 
 Members: 
  - Vijay Anand
