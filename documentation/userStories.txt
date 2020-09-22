@@ -72,4 +72,17 @@ I want to create a secure application
 so that the users can have a safe, toxic free environment to meet new people and have a great online experience.
 
 
+Story #1:
+As an admin
+I want to act as a moderator to ensure that only the right contents are present on the app
+
+Story #2:
+As an admin
+I want to have the ability to prevent certain users from using using the application if required
+
+Story #3:
+As an admin
+I want to be able to view the history/ trend of the application to further make cosmetic/logical modifications 
+
+
  
