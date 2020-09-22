@@ -33,9 +33,12 @@ Areas of focus:
 ## Technical deets
 
 - Webapp runs on Rails 6 
-	- Thank to the beauty of gems, there's something for everything! 
+	- Thanks to the beauty of gems, there's something for everything! 
 - Mobile App runs on Java [Andriod]
 ---
+
+## Rails Documentation: 
+- https://dhanrajvedanth.github.io/Woof_app/
 
 > Current working webapp
 <img src="woof_site.png" width="950"/>
