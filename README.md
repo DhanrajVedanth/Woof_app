@@ -38,11 +38,13 @@ Areas of focus:
 ---
 
 > Current working webapp
-
-<img src="woof_site.png" width="1000"/>
+<img src="woof_site.png" width="950"/>
 
 > After user signed in
-<img src="profile.JPG" width="1000"/>
+<img src="profile.JPG" width="950"/>
+
+> Code Coverage as of September 21, 2020
+<img src="test_coverage.png" width="950"/>
 
 Members: 
  - Vijay Anand
