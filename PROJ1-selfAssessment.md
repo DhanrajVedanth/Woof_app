@@ -50,3 +50,5 @@
 | | evidence that the members of the team are working across multiple places in the code base|4|
 | low-regressions rule | (hard to judge) features released are not subsequently removed|2|
 |short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|3|
+
+Total Score: 3.16
