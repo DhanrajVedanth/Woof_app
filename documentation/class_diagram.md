@@ -1,1 +1,1 @@
-<img src="UML1.png" width="950"/>
+<img src="class_diagram.png" width="950"/>
