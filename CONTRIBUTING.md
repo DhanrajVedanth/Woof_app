@@ -1,7 +1,8 @@
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+Please note we have a code of conduct, please follow it in all your interactions with the project. Last but not the least thank you for contributing! 
+Before you start off, make sure that you have a github account of your own so that you can fork this repository and start your work.
 
 --- 
 ## Pull Request Process
@@ -9,6 +10,8 @@ Ensure any install or build dependencies are removed before the end of the layer
 Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
 You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+Before merging, make sure that you have removed any temporary files and swap files to keep the repo clean. 
+Also remember to update the readme, so that it stays up to date with the rest of the repository.
 
 ## Our Standards
 Examples of behavior that contributes to creating a positive environment include:
@@ -26,6 +29,10 @@ Public or private harassment
 Publishing others' private information, such as a physical or electronic address, without explicit permission
 Other conduct which could reasonably be considered inappropriate in a professional setting
 
+- Other Standards with respect to the building code:
+  * Please use code formatters for all the code written  example: Rubocorp (for Ruby) and Pylint (Python)
+  * Create an executable test case for the code written
+  * Reuse already available code to avoid redundancy when possible
 ---
 ## Our Responsibilities
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
