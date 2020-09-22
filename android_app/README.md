@@ -42,7 +42,7 @@ Areas of focus:
 <img src="app_SS2.jpeg" width="500"/>
 <img src="app_SS3.jpeg" width="500"/>
 <img src="app_SS4.jpeg" width="500"/>
-<img src="app_SS5.jpeg" width="500"/>
+<img src="app_SS6.jpeg" width="500"/>
 
 Members: 
  - Vijay Anand

@@ -38,7 +38,9 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'rails_admin', '~> 2.0', '>= 2.0.2'
 gem 'travis'
-
+gem 'simplecov', require: false, group: :test
+gem 'rails-erd', group: :development
+gem 'yard'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,6 +60,7 @@ group :development do
   gem 'better_errors', '~> 2.4'
   gem 'guard', '~> 2.14', '>= 2.14.1'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'railroady'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
