@@ -30,7 +30,7 @@ Publishing others' private information, such as a physical or electronic address
 Other conduct which could reasonably be considered inappropriate in a professional setting
 
 - Other Standards with respect to the building code:
-  * Please use code formatters for all the code written  example: Rubocorp (for Ruby) and Pylint (Python)
+  * Please use code formatters for all the code written  example: Rubocorp (for Ruby) and Dart (Android)
   * Create an executable test case for the code written
   * Reuse already available code to avoid redundancy when possible
 ---
@@ -45,7 +45,7 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 
 --- 
 ## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [INSERT EMAIL ADDRESS]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at ssdeshp8@ncsu.edu. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
